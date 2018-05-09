@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<plugin id="cordova-plugin-jitsi" version='0.0.2' xmlns="http://apache.org/cordova/ns/plugins/1.0"
+<plugin id="cordova-plugin-jitsi" version='0.0.1' xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>JitsiPlugin</name>
 
@@ -15,11 +15,7 @@
     <author> gaganinvic edited by Adel</author>
 
 	
-    <engines>
-        <engine name="cordova" version=">=3.0.0" />
-        <engine name="android-sdk" version=">=18" />      
-    </engines>
-	
+   
 	<js-module name='JitsiPlugin' src='www/JitsiPlugin.js'>
 		<clobbers target='jitsiplugin' />
 	</js-module>
