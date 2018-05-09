@@ -1,8 +1,17 @@
 ¬<?xml version='1.0' encoding='utf-8'?>
 <plugin id='cordova-plugin-jitsi' version='0.0.1' xmlns='http://apache.org/cordova/ns/plugins/1.0' xmlns:android='http://schemas.android.com/apk/res/android'>
 	<name>JitsiPlugin</name>
-	
-	
+
+    <description>Jitsi Plugin descrip </description>
+
+    <repo>https://github.com/katzer/cordova-plugin-background-mode.git</repo>
+
+    <keywords>appplant, background</keywords>
+
+    <license>Apache 2.0</license>
+
+    <author>Afueo VS 2017</author>
+
 	
     <engines>
         <engine name="cordova" version=">=3.0.0" />
