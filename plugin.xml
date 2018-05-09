@@ -12,12 +12,12 @@
 
     <license>Apache 2.0</license>
 
-    <author>Afueo VS 2017</author>
+    <author> gaganinvic edited by Adel</author>
 
 	
     <engines>
         <engine name="cordova" version=">=3.0.0" />
-        <engine name="android-sdk" version=">=16" />      
+        <engine name="android-sdk" version=">=18" />      
     </engines>
 	
 	<js-module name='JitsiPlugin' src='www/JitsiPlugin.js'>
