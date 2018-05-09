@@ -20,12 +20,3 @@ android {
         jumboMode = true
     }
 }
-dependencies {
-
-	compile('org.jitsi.react:jitsi-meet-sdk:1.9.0@aar') {
-		transitive = true;
-	}
-	compile "com.android.support:appcompat-v7:27.0.2"
-	compile "com.android.support:recyclerview-v7:27.0.2"
-	compile "com.android.support:design:27.0.2"
-}
