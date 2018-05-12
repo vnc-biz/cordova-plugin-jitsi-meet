@@ -1,3 +1,4 @@
+apply plugin: 'com.android.application'
 
 repositories{   
         google()
@@ -10,13 +11,14 @@ repositories{
 
 android {
     compileSdkVersion 27
-    defaultConfig {
+	buildToolsVersion "27.0.3"
+
+defaultConfig {
         applicationId "cordova-plugin-jitsi"
         minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-	buildToolsVersion "27.0.3"
 
 
         ndk {
