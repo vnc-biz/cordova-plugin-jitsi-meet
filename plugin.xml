@@ -18,6 +18,7 @@
    
 	<js-module name='JitsiPlugin' src='www/JitsiPlugin.js'>
 		<clobbers target='jitsiplugin' />
+		<clobbers target='window.plugins.JitsiPlugin' />
 	</js-module>
 
 
