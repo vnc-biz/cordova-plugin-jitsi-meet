@@ -112,7 +112,7 @@ public class JitsiPlugin extends CordovaPlugin{
             @Override
             public void onLoadConfigError(Map<String, Object> data) {
                 on("LOAD_CONFIG_ERROR", data);
-                pluginResult = new PluginResult(PluginResult.Status.OK, "LOAD_CONFIG_ERROR");
+                pluginResult = new PluginResult(PluginResult.Status.OK, data);
                 pluginResult.setKeepCallback(true);
                 callbackContext.sendPluginResult(pluginResult);
             }
