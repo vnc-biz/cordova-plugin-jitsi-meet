@@ -11,10 +11,11 @@
     "android",
     "ios"
   ],
-  "engines": [
-    {
-      "name": "cordova",
-      "version": ">100"
+  "engines": {
+    "cordovaDependencies": {
+      "1.0.0": {
+        "cordova": ">100"
+      }
     }
-  ]
+  }
 }
