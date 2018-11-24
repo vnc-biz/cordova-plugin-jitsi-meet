@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0",
   "name": "cordova-plugin-jitsi",
   "cordova_name": "JitsiPlugin",
   "description": "This plugin allows Jitsi Webrtc",
@@ -13,7 +13,7 @@
   ],
   "engines": {
     "cordovaDependencies": {
-      "3.0.0": {
+      "1.0.0": {
         "cordova": ">100"
       }
     }
