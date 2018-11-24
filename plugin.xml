@@ -1,43 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-
-<plugin id="cordova-plugin-jitsi" version='0.0.6' xmlns="http://apache.org/cordova/ns/plugins/1.0"
-	xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id='cordova-plugin-jitsi' version='0.0.1' xmlns='http://apache.org/cordova/ns/plugins/1.0' xmlns:android='http://schemas.android.com/apk/res/android'>
 	<name>JitsiPlugin</name>
-
-    <description>Jitsi Plugin descrip </description>
-
-    <repo>https://github.com/katzer/cordova-plugin-background-mode.git</repo>
-
-    <keywords>appplant, background</keywords>
-
-    <license>Apache 2.0</license>
-
-    <author> gaganinvic edited by Adel</author>
-
-	
-   
 	<js-module name='JitsiPlugin' src='www/JitsiPlugin.js'>
-		<clobbers target='jitsiplugin' />
-		<clobbers target='window.plugins.JitsiPlugin' />
+		<clobbers target='plugins.JitsiPlugin' />
 	</js-module>
 
-         <platform name='android'>
+
+	<platform name='android'>
 		<config-file parent='/*' target='res/xml/config.xml'>
 			<feature name='JitsiPlugin'>
 				<param name='android-package' value='com.cordova.plugin.jitsi.JitsiPlugin' />
 			</feature>
-	      <feature name="Capture">
-                     <param name="android-package" value="org.apache.cordova.Capture" />
-                </feature>
-		 <feature name="NetworkStatus">
-                       <param name="android-package" value="org.apache.cordova.NetworkManager" />
-                  </feature>
-		 <feature name="Storage">
-                       <param name="android-package" value="org.apache.cordova.Storage" />
-                </feature>
-		 </config-file>
-	  
-		 <config-file parent='/*' target='AndroidManifest.xml'>
+		</config-file>
+		<config-file parent='/*' target='AndroidManifest.xml'>
 			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 			<uses-permission android:name="android.permission.BLUETOOTH" />
 			<uses-permission android:name="android.permission.CAMERA" />
@@ -47,10 +22,7 @@
 			<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 			<uses-permission android:name="android.permission.WAKE_LOCK" />
 			<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />			 
-			 <uses-permission android:name="android.permission.INTERNET" />
 		</config-file>
-	        
 		<source-file src='src/android/JitsiPlugin.java' target-dir='src/com/cordova/plugin/jitsi/' />
 		<framework src='src/android/jitsiplugin.gradle' custom='true' type='gradleReference' />
 	</platform>
@@ -58,20 +30,11 @@
 	<!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-	<feature name="JitsiPlugin">
-	     <param name="ios-package" value="JitsiPlugin"/>
-	 </feature>
-	<feature name="Camera">
-	    <param name="ios-package" value="CDVCamera" />
-	</feature>
-	<feature name="Capture">
-	    <param name="ios-package" value="CDVCapture" />
-	</feature>
-	<feature name="NetworkStatus">
-	    <param name="ios-package" value="CDVConnection" />
-	</feature>
-		
-	    </config-file>
+            <feature name="JitsiPlugin">
+                <param name="ios-package" value="JitsiPlugin"/>
+            </feature>
+        </config-file>
+
 		<header-file src="src/ios/JitsiMeetView.h" />
 		<header-file src="src/ios/JitsiMeetViewDelegate.h" />
         <header-file src="src/ios/JitsiPlugin.h" />
