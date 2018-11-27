@@ -143,4 +143,3 @@ public class JitsiPlugin extends CordovaPlugin{
 
  
 }
-
