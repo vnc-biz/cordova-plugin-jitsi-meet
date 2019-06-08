@@ -16,7 +16,7 @@ CDVPluginResult *pluginResult = nil;
     jitsiMeetView.welcomePageEnabled = NO;
     [jitsiMeetView loadURLObject:@{
         @"config": @{
-            @"startWithAudioMuted": @YES,
+            @"startWithAudioMuted": @NO,
             @"startWithVideoMuted": @NO
         },
         @"url": url
