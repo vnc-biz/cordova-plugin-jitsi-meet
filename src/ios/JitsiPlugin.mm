@@ -8,7 +8,7 @@ CDVPluginResult *pluginResult = nil;
 
 - (void)loadURL:(CDVInvokedUrlCommand *)command {
     NSString* url = [command.arguments objectAtIndex:0];
-    NSString* key = [command.arguments objectAtIndex:1];
+    NSString* muteVideo = [command.arguments objectAtIndex:1];
     commandBack = command;
     jitsiMeetView = [[JitsiMeetView alloc] initWithFrame:self.viewController.view.frame];
     jitsiMeetView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -17,7 +17,7 @@ CDVPluginResult *pluginResult = nil;
     [jitsiMeetView loadURLObject:@{
         @"config": @{
             @"startWithAudioMuted": @NO,
-            @"startWithVideoMuted": @NO
+            @"startWithVideoMuted": muteVideo
         },
         @"url": url
     }];
